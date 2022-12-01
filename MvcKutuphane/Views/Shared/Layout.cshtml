@@ -1,0 +1,85 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00ffff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    </style>
+</head>
+<body>
+
+    <div class="sidenav">
+
+
+        <a href="#" <i class="glyphicon glyphicon-home"></i> Anasayfa</a> <br />
+        <a href="/Kategori/Index/" <i class="glyphicon glyphicon-list"></i> Kategoriler</a> <br />
+        <a href="/Kitap/Index/" <i class="glyphicon glyphicon-book"></i> Kitaplar</a> <br />
+        <a href="/Yazar/Index/" <i class="glyphicon glyphicon-pencil"></i> Yazarlar</a> <br />
+        <a href="/Uye/Index/" <i class="glyphicon glyphicon-user"></i> Üyeler</a> <br />
+        <a href="/Personel/Index/" <i class="glyphicon glyphicon-tower"></i> Personeller</a> <br />
+        <a href="/Odunc/OduncVer" <i class="glyphicon glyphicon-circle-arrow-right"></i> Ödünç Kitap Ver</a> <br />
+        <a href="/Odunc/Index/" <i class="glyphicon glyphicon-circle-arrow-left"></i> Ödünç Kitap Al</a> <br />
+        <a href="/Istatistik/Index/" <i class="glyphicon glyphicon-sort"></i> İstatistikler</a> <br />
+        <a href="#" <i class="glyphicon glyphicon-euro"></i> Kasa</a> <br />
+        <a href="/Islem/Index/" <i class="glyphicon glyphicon-dashboard"></i> İşlemler</a> <br />
+        <a href="/Istatistik/Hava/" <i class="glyphicon glyphicon-cloud"></i> Hava Raporu</a> <br />
+        <a href="/Istatistik/HavaKart/" <i class="glyphicon glyphicon-plus-sign"></i> Hava Kartları</a> <br />
+        <a href="/Istatistik/Galeri" <i class="glyphicon glyphicon-picture"></i> Galeri</a> <br />
+        <a href="/Vitrin/Index/" <i class="glyphicon glyphicon-gift"></i> Vitrin</a> <br />
+        <a href="#" <i class="glyphicon glyphicon-cog"></i> Ayarlar</a> <br />
+        <a href="#" <i class="glyphicon glyphicon-phone"></i> Yardım</a> <br />
+        <a href="#" <i class="glyphicon glyphicon-remove-sign"></i> Çıkış</a> <br />
+
+    </div>
+
+    <div class="main">
+       @RenderBody()
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+﻿@model MvcKutuphane.Models.Entity.tbluyeler
+@{
+    ViewBag.Title = "UyeEkle";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Üye Ekle</h2> <br />
+
+<form class="form-group" method="post">
+
+    <div>
+        <label> Adı</label>
+        <input type="text" class="form-control" name="ad" />
+    </div> <br />
+    <div>
+        <label> Soyadı</label>
+        <input type="text" class="form-control" name="soyad" />
+    </div> <br />
+    <div>
+        <label> Mail</label>
+        <input type="text" class="form-control" name="mail" />
+    </div> <br />
+    <div>
+        <label>Kullanıcı Adı</label>
+        <input type="text" class="form-control" name="kullaniciadi" />
+    </div> <br />
+    <div>
+        <label>Şifre</label>
+        <input type="text" class="form-control" name="sifre" />
+    </div> <br />
+    <div>
+        <label> Telefon</label>
+        <input type="text" class="form-control" name="telefon" />
+    </div> <br />
+    <div>
+        <label> Okul</label>
+        <input type="text" class="form-control" name="okul" />
+    </div> <br />
+
+    <div style="margin-top:15px">
+        <button class="btn btn-success">Üye Ekle</button>
+    </div>
+
+
+</form>
+
